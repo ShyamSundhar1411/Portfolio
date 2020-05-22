@@ -5,3 +5,9 @@ class Blog(models.Model):
     dot=models.DateTimeField()
     body=models.TextField()
     imgs=models.ImageField(upload_to='images/')
+    def __str__(self):
+        return self.title
+    def summary(self):
+        return self.body[:50]
+    def dot_new(self):
+        return self.dot.strftime('%b %e %Y')
