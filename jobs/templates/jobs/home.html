@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
+
   <head>
+    {% load static %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Album example · Bootstrap</title>
+    <title>Shyam Sundhar</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -45,20 +48,20 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Shyam Sundhar</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Shyam Sundhar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="#">Twitter</a>
+              <a class="nav-link" href="https://github.com/ShyamSundhar1411">GitHub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="{% url 'show' %}">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">YouTube</a>
+              <a class="nav-link" href="https://Youtube.com/c/gamingwithskytorrush">YouTube</a>
             </li>
 
           </ul>
@@ -70,12 +73,19 @@
 
   <section class="jumbotron text-center">
     <div class="container text-center">
-      <h1 class='text-center '>Hi, I am shyam🙂</h1>
+      <h1 class='text'style='text-align: center;'>Hi, I am Shyam🙂</h1>
       <p class="lead text-muted-center">I am a student</p>
+      <img  class='img-rounded'style='vertical-align: middle;
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  'src='{% static "IMG_20191002_122552094.jpg" %}'height="260" width='230'  />
       <p>
         <a href="mailto:clashwithchiefrpjyt@gmail.com" class="btn btn-primary my-2">Email me</a>
-
       </p>
+
+
+
     </div>
   </section>
 
